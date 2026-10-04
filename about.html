@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Bella Taste Restaurant</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        
+
+        .about-banner {
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)),
+                url("images/banner-1.jpg") center/cover no-repeat;
+            min-height: 330px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .about-banner h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .about-banner p {
+            font-size: 17px;
+            margin-bottom: 0;
+        }
+
+        .about-section {
+            padding: 80px 0;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .about-content h2 {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .about-content h2 span {
+            color: #b8860b;
+        }
+
+        .about-content p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 18px;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .about-feature-icon {
+            min-width: 48px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #b8860b;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+        }
+
+        .about-feature h5 {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .about-feature p {
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+
+        
+
+        .stats-section {
+            background: #f7f3ea;
+            padding: 65px 0;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        .stat-icon {
+            font-size: 38px;
+            color: #b8860b;
+            margin-bottom: 10px;
+        }
+
+        .stat-box h3 {
+            font-size: 38px;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+        .stat-box p {
+            color: #666;
+            margin: 0;
+            font-weight: 500;
+        }
+
+       
+
+        .mission-section {
+            padding: 80px 0;
+        }
+
+        .mission-card {
+            height: 100%;
+            padding: 35px 30px;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .mission-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .mission-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #b8860b;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+
+        .mission-card h4 {
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .mission-card p {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        
+
+        .chef-section {
+            background: #f7f3ea;
+            padding: 80px 0;
+        }
+
+        .chef-image {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .chef-content {
+            padding: 20px 0 20px 30px;
+        }
+
+        .chef-content h2 {
+            font-size: 36px;
+            font-weight: 800;
+        }
+
+        .chef-content h2 span {
+            color: #b8860b;
+        }
+
+        .chef-content .chef-title {
+            color: #b8860b;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .chef-content p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        
+
+        .about-cta {
+            padding: 75px 0;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)),
+                url("images/banner-2.jpg") center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+        }
+
+        .about-cta h2 {
+            font-size: 38px;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .about-cta p {
+            max-width: 650px;
+            margin: 0 auto 25px;
+            color: #eee;
+        }
+
+        .btn-gold-custom {
+            background: #b8860b;
+            color: #fff;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 7px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-gold-custom:hover {
+            background: #8f6808;
+            color: #fff;
+        }
+
+        
+
+        @media (max-width: 991px) {
+
+            .about-image {
+                height: 400px;
+                margin-bottom: 35px;
+            }
+
+            .chef-content {
+                padding: 30px 0 0;
+            }
+
+        }
+
+        @media (max-width: 767px) {
+
+            .about-banner {
+                min-height: 270px;
+            }
+
+            .about-section,
+            .mission-section,
+            .chef-section {
+                padding: 55px 0;
+            }
+
+            .about-content h2,
+            .chef-content h2 {
+                font-size: 30px;
+            }
+
+            .about-image {
+                height: 320px;
+            }
+
+            .chef-image {
+                height: 330px;
+            }
+
+            .about-cta h2 {
+                font-size: 30px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+<div class="topbar py-2">
+
+    <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
+
+        <div>
+
+            <span>
+                <i class="bi bi-envelope"></i>
+                info@bellataste.com
+            </span>
+
+            <span class="ms-3">
+                <i class="bi bi-telephone"></i>
+                +880 1700-000000
+            </span>
+
+        </div>
+
+
+        <div>
+
+            <span id="dateTime"></span>
+
+            <a href="reservation.html" class="ms-3">
+                Reservation
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+            <a href="signup.html">
+                Register
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+
+    <div class="container">
+
+        <!-- Logo -->
+
+        <a class="navbar-brand brand" href="index.html">
+
+            <i class="bi bi-shop"></i>
+
+            Bella Taste
+
+        </a>
+
+
+        <!-- Mobile Menu -->
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <!-- Navigation -->
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="menu.html">
+                        Menu
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="dish-detail.html">
+                        Dish Detail
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="reservation.html">
+                        Reservation
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link active fw-bold" href="about.html">
+                        About Us
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="index.html#contact">
+                        Contact
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="login.html">
+                        Login
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="signup.html">
+                        Register
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+
+<section class="about-banner">
+
+    <div class="container">
+
+        <h1>
+            About Bella Taste
+        </h1>
+
+        <p>
+            Home / About Us
+        </p>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="about-section">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <!-- Image -->
+
+            <div class="col-lg-6">
+
+                <img
+                    src="images/banner-3.jpg"
+                    alt="Bella Taste Restaurant"
+                    class="about-image"
+                >
+
+            </div>
+
+
+            
+
+            <div class="col-lg-6">
+
+                <div class="about-content">
+
+                    <span class="text-uppercase fw-bold"
+                          style="color:#b8860b;">
+                        Welcome to Bella Taste
+                    </span>
+
+                    <h2>
+                        We Serve <span>Delicious Food</span>
+                        With Passion
+                    </h2>
+
+                    <p>
+                        Bella Taste is a modern restaurant dedicated to
+                        serving delicious, fresh, and high-quality food
+                        in a warm and welcoming environment.
+                    </p>
+
+                    <p>
+                        Our chefs carefully select fresh ingredients and
+                        prepare every dish with passion, creativity, and
+                        attention to detail. From traditional favorites
+                        to modern dishes, we want every meal to be a
+                        memorable experience.
+                    </p>
+
+
+                    <!-- Feature 1 -->
+
+                    <div class="about-feature">
+
+                        <div class="about-feature-icon">
+
+                            <i class="bi bi-award"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h5>
+                                Quality Food
+                            </h5>
+
+                            <p>
+                                We use fresh and high-quality ingredients
+                                for every dish.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Feature 2 -->
+
+                    <div class="about-feature">
+
+                        <div class="about-feature-icon">
+
+                            <i class="bi bi-heart"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h5>
+                                Made With Love
+                            </h5>
+
+                            <p>
+                                Every meal is prepared with passion and care.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Button -->
+
+                    <div class="mt-4">
+
+                        <a
+                            href="menu.html"
+                            class="btn btn-gold-custom"
+                        >
+                            Explore Our Menu
+                            <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="stats-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-6 col-lg-3">
+
+                <div class="stat-box">
+
+                    <div class="stat-icon">
+
+                        <i class="bi bi-calendar-check"></i>
+
+                    </div>
+
+                    <h3>10+</h3>
+
+                    <p>
+                        Years Experience
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <div class="stat-box">
+
+                    <div class="stat-icon">
+
+                        <i class="bi bi-people"></i>
+
+                    </div>
+
+                    <h3>25K+</h3>
+
+                    <p>
+                        Happy Customers
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <div class="stat-box">
+
+                    <div class="stat-icon">
+
+                        <i class="bi bi-egg-fried"></i>
+
+                    </div>
+
+                    <h3>50+</h3>
+
+                    <p>
+                        Food Items
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <div class="stat-box">
+
+                    <div class="stat-icon">
+
+                        <i class="bi bi-star-fill"></i>
+
+                    </div>
+
+                    <h3>4.9</h3>
+
+                    <p>
+                        Customer Rating
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="mission-section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+                What We Believe
+            </h2>
+
+            <p class="text-muted mt-3">
+                Our values guide everything we do at Bella Taste.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- Mission -->
+
+            <div class="col-lg-4">
+
+                <div class="mission-card">
+
+                    <div class="mission-icon">
+
+                        <i class="bi bi-bullseye"></i>
+
+                    </div>
+
+                    <h4>
+                        Our Mission
+                    </h4>
+
+                    <p>
+                        To provide delicious food, excellent service,
+                        and a comfortable dining experience for every
+                        guest who visits Bella Taste.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Vision -->
+
+            <div class="col-lg-4">
+
+                <div class="mission-card">
+
+                    <div class="mission-icon">
+
+                        <i class="bi bi-eye"></i>
+
+                    </div>
+
+                    <h4>
+                        Our Vision
+                    </h4>
+
+                    <p>
+                        To become a trusted and loved restaurant known
+                        for quality food, friendly service, and memorable
+                        dining experiences.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Values -->
+
+            <div class="col-lg-4">
+
+                <div class="mission-card">
+
+                    <div class="mission-icon">
+
+                        <i class="bi bi-stars"></i>
+
+                    </div>
+
+                    <h4>
+                        Our Values
+                    </h4>
+
+                    <p>
+                        Quality, honesty, cleanliness, hospitality,
+                        creativity, and customer satisfaction are at
+                        the heart of our restaurant.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="chef-section">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <!-- Chef Image -->
+
+            <div class="col-lg-6">
+
+                <img
+                    src="images/dish-5.jpg"
+                    alt="Our Chef"
+                    class="chef-image"
+                >
+
+            </div>
+
+
+            <!-- Chef Content -->
+
+            <div class="col-lg-6">
+
+                <div class="chef-content">
+
+                    <span class="text-uppercase fw-bold"
+                          style="color:#b8860b;">
+                        Meet Our Chef
+                    </span>
+
+                    <h2>
+                        Passion Behind
+                        <span>Every Dish</span>
+                    </h2>
+
+                    <div class="chef-title">
+                        Executive Chef — Bella Taste
+                    </div>
+
+                    <p>
+                        Our culinary team combines experience, creativity,
+                        and passion to create dishes that bring people
+                        together.
+                    </p>
+
+                    <p>
+                        From selecting the finest ingredients to the final
+                        presentation, our chefs pay attention to every
+                        detail to make sure every plate meets our standards.
+                    </p>
+
+
+                    <div class="mt-4">
+
+                        <a
+                            href="menu.html"
+                            class="btn btn-gold-custom"
+                        >
+                            View Our Dishes
+                            <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="about-cta">
+
+    <div class="container">
+
+        <h2>
+            Ready for a Delicious Experience?
+        </h2>
+
+        <p>
+            Discover our delicious menu and reserve your table
+            today at Bella Taste Restaurant.
+        </p>
+
+        <a
+            href="reservation.html"
+            class="btn btn-gold-custom"
+        >
+            Reserve a Table
+            <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+
+        <a
+            href="menu.html"
+            class="btn btn-outline-light ms-2"
+        >
+            View Menu
+        </a>
+
+    </div>
+
+</section>
+
+
+
+
+<footer class="pt-5 pb-3">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- Restaurant -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <h4 class="text-white">
+                    Bella Taste
+                </h4>
+
+                <p>
+                    Experience delicious food, warm hospitality,
+                    and unforgettable moments at Bella Taste Restaurant.
+                </p>
+
+                <div class="mt-3">
+
+                    <a href="#" class="me-3 fs-5">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="#" class="me-3 fs-5">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#" class="me-3 fs-5">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                    <a href="#" class="fs-5">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Links -->
+
+            <div class="col-lg-2 col-md-6">
+
+                <h5 class="text-white">
+                    Quick Links
+                </h5>
+
+                <ul class="list-unstyled">
+
+                    <li class="mb-2">
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="menu.html">
+                            Menu
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="reservation.html">
+                            Reservation
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="signup.html">
+                            Register
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Opening Hours -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <h5 class="text-white">
+                    Opening Hours
+                </h5>
+
+                <p class="mb-2">
+                    Monday - Thursday
+                    <br>
+                    10:00 AM - 10:00 PM
+                </p>
+
+                <p class="mb-0">
+                    Friday - Sunday
+                    <br>
+                    10:00 AM - 11:30 PM
+                </p>
+
+            </div>
+
+
+            <!-- Contact -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <h5 class="text-white">
+                    Contact Us
+                </h5>
+
+                <p>
+                    <i class="bi bi-geo-alt me-2"></i>
+                    Dhaka, Bangladesh
+                </p>
+
+                <p>
+                    <i class="bi bi-telephone me-2"></i>
+                    +880 1700-000000
+                </p>
+
+                <p>
+                    <i class="bi bi-envelope me-2"></i>
+                    info@bellataste.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <hr class="border-secondary my-4">
+
+
+        <div class="text-center">
+
+            <p class="mb-0">
+                © 2026 Bella Taste Restaurant.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration | Bella Taste Restaurant</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .register-section {
+            min-height: calc(100vh - 150px);
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                url("images/banner-1.jpg") center/cover no-repeat;
+            padding: 70px 15px;
+        }
+
+        .register-card {
+            max-width: 850px;
+            margin: auto;
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+        }
+
+        .register-header {
+            background: #b8860b;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .register-header h2 {
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .register-header p {
+            margin: 0;
+            opacity: 0.9;
+        }
+
+        .register-body {
+            padding: 40px;
+        }
+
+        .form-label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-control {
+            height: 48px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            padding: 10px 14px;
+        }
+
+        .form-control:focus {
+            border-color: #b8860b;
+            box-shadow: 0 0 0 0.2rem rgba(184, 134, 11, 0.15);
+        }
+
+        .input-group-text {
+            background: #f8f8f8;
+            border-color: #ddd;
+        }
+
+        .btn-register {
+            background: #b8860b;
+            color: #fff;
+            border: none;
+            height: 50px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .btn-register:hover {
+            background: #8f6808;
+            color: #fff;
+        }
+
+        .login-link {
+            color: #b8860b;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .login-link:hover {
+            color: #8f6808;
+            text-decoration: underline;
+        }
+
+        .required {
+            color: #dc3545;
+        }
+
+        @media (max-width: 767px) {
+            .register-section {
+                padding: 40px 15px;
+            }
+
+            .register-body {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<div class="topbar py-2">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
+
+        <div>
+            <span>
+                <i class="bi bi-envelope"></i>
+                info@bellataste.com
+            </span>
+
+            <span class="ms-3">
+                <i class="bi bi-telephone"></i>
+                +880 1700-000000
+            </span>
+        </div>
+
+        <div>
+            <span id="dateTime"></span>
+
+            <a href="reservation.html" class="ms-3">
+                Reservation
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand brand" href="index.html">
+            <i class="bi bi-shop"></i>
+            Bella Taste
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">
+                        Menu
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="dish-detail.html">
+                        Dish Detail
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="reservation.html">
+                        Reservation
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#about">
+                        About Us
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">
+                        Contact
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">
+                        Login
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold" href="signup.html">
+                        Register
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= REGISTRATION ================= -->
+<section class="register-section">
+
+    <div class="register-card">
+
+        <!-- Header -->
+        <div class="register-header">
+
+            <h2>
+                <i class="bi bi-person-plus-fill"></i>
+                Create Your Account
+            </h2>
+
+            <p>
+                Join Bella Taste and enjoy our delicious food and services.
+            </p>
+
+        </div>
+
+
+        <!-- Form -->
+        <div class="register-body">
+
+            <form id="registrationForm">
+
+                <div class="row g-4">
+
+                    <!-- First Name -->
+                    <div class="col-md-6">
+
+                        <label for="firstName" class="form-label">
+                            First Name
+                            <span class="required">*</span>
+                        </label>
+
+                        <div class="input-group">
+
+                            <span class="input-group-text">
+                                <i class="bi bi-person"></i>
+                            </span>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="firstName"
+                                name="firstName"
+                                placeholder="Enter first name"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Last Name -->
+                    <div class="col-md-6">
+
+                        <label for="lastName" class="form-label">
+                            Last Name
+                            <span class="required">*</span>
+                        </label>
+
+                        <div class="input-group">
+
+                            <span class="input-group-text">
+                                <i class="bi bi-person"></i>
+                            </span>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="lastName"
+                                name="lastName"
+                                placeholder="Enter last name"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="col-md-6">
+
+                        <label for="phone" class="form-label">
+                            Phone Number
+                            <span class="required">*</span>
+                        </label>
+
+                        <div class="input-group">
+
+                            <span class="input-group-text">
+                                <i class="bi bi-telephone"></i>
+                            </span>
+
+                            <input
+                                type="tel"
+                                class="form-control"
+                                id="phone"
+                                name="phone"
+                                placeholder="+880 1XXXXXXXXX"
+                                pattern="[+0-9\s-]{10,20}"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="col-md-6">
+
+                        <label for="email" class="form-label">
+                            Email Address
+                            <span class="required">*</span>
+                        </label>
+
+                        <div class="input-group">
+
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope"></i>
+                            </span>
+
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                name="email"
+                                placeholder="example@email.com"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Username -->
+                    <div class="col-md-6">
+
+                        <label for="username" class="form-label">
+                            Username
+                            <span class="required">*</span>
+                        </label>
+
+                        <div class="input-group">
+
+                            <span class="input-group-text">
+                                <i class="bi bi-person-badge"></i>
+                            </span>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="username"
+                                name="username"
+                                placeholder="Choose a username"
+                                minlength="4"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="col-md-6">
+
+                        <label for="password" class="form-label">
+                            Password
+                            <span class="required">*</span>
+                        </label>
+
+                        <div class="input-group">
+
+                            <span class="input-group-text">
+                                <i class="bi bi-lock"></i>
+                            </span>
+
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="password"
+                                name="password"
+                                placeholder="Enter password"
+                                minlength="6"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="btn btn-outline-secondary"
+                                id="togglePassword"
+                            >
+                                <i class="bi bi-eye"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Confirm Password -->
+                    <div class="col-md-6">
+
+                        <label for="confirmPassword" class="form-label">
+                            Confirm Password
+                            <span class="required">*</span>
+                        </label>
+
+                        <div class="input-group">
+
+                            <span class="input-group-text">
+                                <i class="bi bi-lock-fill"></i>
+                            </span>
+
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="Confirm password"
+                                minlength="6"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Terms -->
+                    <div class="col-12">
+
+                        <div class="form-check">
+
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="terms"
+                                required
+                            >
+
+                            <label
+                                class="form-check-label"
+                                for="terms"
+                            >
+                                I agree to the
+                                <a href="#" class="login-link">
+                                    Terms & Conditions
+                                </a>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Submit -->
+                    <div class="col-12">
+
+                        <button
+                            type="submit"
+                            class="btn btn-register w-100"
+                        >
+                            <i class="bi bi-person-plus"></i>
+                            Create Account
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+
+            <!-- Login -->
+            <div class="text-center mt-4">
+
+                <span>
+                    Already have an account?
+                </span>
+
+                <a href="login.html" class="login-link">
+                    Login here
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="pt-5 pb-3">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- Restaurant -->
+            <div class="col-lg-4 col-md-6">
+
+                <h4 class="text-white">
+                    Bella Taste
+                </h4>
+
+                <p>
+                    Experience delicious food, warm hospitality,
+                    and unforgettable moments at Bella Taste Restaurant.
+                </p>
+
+                <div class="mt-3">
+
+                    <a href="#" class="me-3 fs-5">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="#" class="me-3 fs-5">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#" class="me-3 fs-5">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                    <a href="#" class="fs-5">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-6">
+
+                <h5 class="text-white">
+                    Quick Links
+                </h5>
+
+                <ul class="list-unstyled">
+
+                    <li class="mb-2">
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="menu.html">
+                            Menu
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="reservation.html">
+                            Reservation
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="login.html">
+                            Login
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Opening Hours -->
+            <div class="col-lg-3 col-md-6">
+
+                <h5 class="text-white">
+                    Opening Hours
+                </h5>
+
+                <p class="mb-2">
+                    Monday - Thursday
+                    <br>
+                    10:00 AM - 10:00 PM
+                </p>
+
+                <p class="mb-0">
+                    Friday - Sunday
+                    <br>
+                    10:00 AM - 11:30 PM
+                </p>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="col-lg-3 col-md-6">
+
+                <h5 class="text-white">
+                    Contact Us
+                </h5>
+
+                <p>
+                    <i class="bi bi-geo-alt me-2"></i>
+                    Dhaka, Bangladesh
+                </p>
+
+                <p>
+                    <i class="bi bi-telephone me-2"></i>
+                    +880 1700-000000
+                </p>
+
+                <p>
+                    <i class="bi bi-envelope me-2"></i>
+                    info@bellataste.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <hr class="border-secondary my-4">
+
+
+        <div class="text-center">
+
+            <p class="mb-0">
+                © 2026 Bella Taste Restaurant.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- Registration JavaScript -->
+<script>
+
+    // Password show/hide
+    document
+        .getElementById("togglePassword")
+        .addEventListener("click", function () {
+
+            const password =
+                document.getElementById("password");
+
+            const icon =
+                this.querySelector("i");
+
+            if (password.type === "password") {
+
+                password.type = "text";
+
+                icon.classList.remove("bi-eye");
+                icon.classList.add("bi-eye-slash");
+
+            } else {
+
+                password.type = "password";
+
+                icon.classList.remove("bi-eye-slash");
+                icon.classList.add("bi-eye");
+
+            }
+
+        });
+
+
+    // Registration validation
+    document
+        .getElementById("registrationForm")
+        .addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const password =
+                document.getElementById("password").value;
+
+            const confirmPassword =
+                document.getElementById("confirmPassword").value;
+
+            if (password !== confirmPassword) {
+
+                alert("Password and Confirm Password do not match!");
+
+                return;
+            }
+
+
+            alert(
+                "Registration successful! Welcome to Bella Taste Restaurant."
+            );
+
+            this.reset();
+
+        });
+
+</script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

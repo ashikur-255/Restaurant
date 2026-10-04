@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodHouse Restaurant | Home</title>
+
+   
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+<div class="top-bar">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-md-6">
+                <span>
+                    <i class="bi bi-envelope"></i>
+                    info@foodhouse.com
+                </span>
+
+                <span class="ms-3">
+                    <i class="bi bi-telephone"></i>
+                    +880 1712-345678
+                </span>
+            </div>
+
+            <div class="col-md-6 text-md-end mt-2 mt-md-0">
+                <a href="reservation.html">
+                    <i class="bi bi-calendar-check"></i>
+                    Reservation
+                </a>
+
+                <a href="login.html" class="ms-3">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    Login
+                </a>
+
+                <a href="signup.html" class="ms-3">
+                    <i class="bi bi-person-plus"></i>
+                    Register
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark main-navbar sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+            <i class="bi bi-egg-fried"></i>
+            Food<span>House</span>
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavigation">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">
+                        Menu
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="dish-detail.html">
+                        Details Pages
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="reservation.html">
+                        Reservation
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                        Contact
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">
+                        Login
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">
+                        Register
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="datetime-bar">
+    <div class="container text-center">
+        <i class="bi bi-clock"></i>
+        <span id="currentDateTime"></span>
+    </div>
+</div>
+
+
+
+<section class="hero-section">
+
+    <div id="restaurantSlider"
+         class="carousel slide carousel-fade"
+         data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+
+            <button type="button"
+                    data-bs-target="#restaurantSlider"
+                    data-bs-slide-to="0"
+                    class="active"></button>
+
+            <button type="button"
+                    data-bs-target="#restaurantSlider"
+                    data-bs-slide-to="1"></button>
+
+            <button type="button"
+                    data-bs-target="#restaurantSlider"
+                    data-bs-slide-to="2"></button>
+
+        </div>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="images/banner-1.jpg"
+                     class="d-block w-100"
+                     alt="Delicious Food">
+
+                <div class="hero-overlay"></div>
+
+                <div class="carousel-caption">
+                    <p class="hero-small-title">
+                        WELCOME TO FOODHOUSE
+                    </p>
+
+                    <h1>
+                        Delicious Food,
+                        <span>Beautiful Moments</span>
+                    </h1>
+
+                    <p>
+                        Enjoy fresh, delicious and carefully prepared meals
+                        with your family and friends.
+                    </p>
+
+                    <a href="reservation.html"
+                       class="btn btn-primary-custom">
+                        Book a Table
+                    </a>
+
+                    <a href="menu.html"
+                       class="btn btn-outline-light ms-2">
+                        Explore Menu
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="carousel-item">
+
+                <img src="images/banner-2.jpg"
+                     class="d-block w-100"
+                     alt="Restaurant Food">
+
+                <div class="hero-overlay"></div>
+
+                <div class="carousel-caption">
+
+                    <p class="hero-small-title">
+                        FRESH & DELICIOUS
+                    </p>
+
+                    <h1>
+                        Taste The
+                        <span>Difference</span>
+                    </h1>
+
+                    <p>
+                        Premium ingredients, professional chefs and
+                        unforgettable taste.
+                    </p>
+
+                    <a href="menu.html"
+                       class="btn btn-primary-custom">
+                        View Menu
+                    </a>
+
+                </div>
+            </div>
+
+
+            <div class="carousel-item">
+
+                <img src="images/banner-3.jpg"
+                     class="d-block w-100"
+                     alt="Fine Dining">
+
+                <div class="hero-overlay"></div>
+
+                <div class="carousel-caption">
+
+                    <p class="hero-small-title">
+                        PREMIUM DINING
+                    </p>
+
+                    <h1>
+                        Your Table,
+                        <span>Your Experience</span>
+                    </h1>
+
+                    <p>
+                        Make every meal a special occasion.
+                    </p>
+
+                    <a href="reservation.html"
+                       class="btn btn-primary-custom">
+                        Reserve Now
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#restaurantSlider"
+                data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon"></span>
+
+        </button>
+
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#restaurantSlider"
+                data-bs-slide="next">
+
+            <span class="carousel-control-next-icon"></span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<section class="section-padding">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>OUR SPECIAL</span>
+
+            <h2>Special Dishes</h2>
+
+            <p>
+                Discover our most popular dishes prepared
+                specially by our chefs.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- Dish 1 -->
+            <div class="col-lg-3 col-md-6">
+
+                <div class="food-card">
+
+                    <div class="food-image">
+
+                        <img src="images/dish-1.jpg"
+                             alt="Grilled Chicken">
+
+                        <span class="price-tag">
+                            ৳450
+                        </span>
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <h4>Grilled Chicken</h4>
+
+                        <p>
+                            Tender grilled chicken served with
+                            fresh vegetables and special sauce.
+                        </p>
+
+                        <div class="rating">
+                            ★★★★★
+                        </div>
+
+                        <a href="dish-detail.html"
+                           class="btn btn-primary-custom w-100">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Dish 2 -->
+            <div class="col-lg-3 col-md-6">
+
+                <div class="food-card">
+
+                    <div class="food-image">
+
+                        <img src="images/dish-2.jpg"
+                             alt="Beef Burger">
+
+                        <span class="price-tag">
+                            ৳350
+                        </span>
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <h4>Classic Beef Burger</h4>
+
+                        <p>
+                            Juicy beef patty with fresh vegetables,
+                            cheese and special sauce.
+                        </p>
+
+                        <div class="rating">
+                            ★★★★★
+                        </div>
+
+                        <a href="dish-detail.html"
+                           class="btn btn-primary-custom w-100">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Dish 3 -->
+            <div class="col-lg-3 col-md-6">
+
+                <div class="food-card">
+
+                    <div class="food-image">
+
+                        <img src="images/dish-3.jpg"
+                             alt="Pasta">
+
+                        <span class="price-tag">
+                            ৳380
+                        </span>
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <h4>Creamy Pasta</h4>
+
+                        <p>
+                            Delicious creamy pasta prepared with
+                            herbs and premium ingredients.
+                        </p>
+
+                        <div class="rating">
+                            ★★★★★
+                        </div>
+
+                        <a href="dish-detail.html"
+                           class="btn btn-primary-custom w-100">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Dish 4 -->
+            <div class="col-lg-3 col-md-6">
+
+                <div class="food-card">
+
+                    <div class="food-image">
+
+                        <img src="images/dish-4.jpg"
+                             alt="Pizza">
+
+                        <span class="price-tag">
+                            ৳550
+                        </span>
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <h4>Special Pizza</h4>
+
+                        <p>
+                            Crispy crust pizza loaded with cheese,
+                            vegetables and delicious toppings.
+                        </p>
+
+                        <div class="rating">
+                            ★★★★★
+                        </div>
+
+                        <a href="dish-detail.html"
+                           class="btn btn-primary-custom w-100">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="chef-section" id="about">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <img src="images/dish-5.jpg"
+                     class="img-fluid rounded-4 shadow"
+                     alt="Chef Recommendation">
+
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0">
+
+                <span class="section-label">
+                    CHEF'S RECOMMENDATION
+                </span>
+
+                <h2>
+                    Special Chicken Steak
+                </h2>
+
+                <p>
+                    Our chef's special chicken steak is prepared
+                    with premium ingredients and a unique blend
+                    of herbs and spices.
+                </p>
+
+                <p>
+                    Served with fresh vegetables, mashed potatoes
+                    and our signature sauce.
+                </p>
+
+                <h3 class="chef-price">
+                    ৳650
+                </h3>
+
+                <a href="dish-detail.html"
+                   class="btn btn-primary-custom">
+                    View Dish
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="section-padding">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>TESTIMONIALS</span>
+
+            <h2>What Our Customers Say</h2>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+
+                <div class="testimonial-card">
+
+                    <div class="testimonial-icon">
+                        <i class="bi bi-quote"></i>
+                    </div>
+
+                    <p>
+                        "The food was absolutely delicious.
+                        The service was excellent and the
+                        environment was very comfortable."
+                    </p>
+
+                    <h5>
+                        Rahim Ahmed
+                    </h5>
+
+                    <small>
+                        Regular Customer
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+                <div class="testimonial-card">
+
+                    <div class="testimonial-icon">
+                        <i class="bi bi-quote"></i>
+                    </div>
+
+                    <p>
+                        "A wonderful place for family dinner.
+                        The food quality and presentation were
+                        excellent."
+                    </p>
+
+                    <h5>
+                        Nusrat Jahan
+                    </h5>
+
+                    <small>
+                        Customer
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="newsletter-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <span>
+                    STAY UPDATED
+                </span>
+
+                <h2>
+                    Subscribe to Our Newsletter
+                </h2>
+
+                <p>
+                    Get our latest offers, special dishes
+                    and restaurant updates.
+                </p>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <form id="newsletterForm"
+                      class="newsletter-form">
+
+                    <div class="input-group">
+
+                        <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Enter your email"
+                            required>
+
+                        <button class="btn btn-primary-custom"
+                                type="submit">
+                            Subscribe
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer class="footer" id="contact">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+
+                <h3 class="footer-logo">
+                    <i class="bi bi-egg-fried"></i>
+                    FoodHouse
+                </h3>
+
+                <p>
+                    FoodHouse is a modern restaurant offering
+                    delicious food, excellent service and a
+                    comfortable dining experience.
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-2 col-md-4">
+
+                <h5>
+                    Quick Links
+                </h5>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="menu.html">
+                            Menu
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="reservation.html">
+                            Reservation
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html">
+                            Login
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-4">
+
+                <h5>
+                    Opening Hours
+                </h5>
+
+                <p>
+                    Monday - Friday
+                    <br>
+                    10:00 AM - 10:00 PM
+                </p>
+
+                <p>
+                    Saturday - Sunday
+                    <br>
+                    11:00 AM - 11:30 PM
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-4">
+
+                <h5>
+                    Contact
+                </h5>
+
+                <p>
+                    <i class="bi bi-geo-alt"></i>
+                    Dhaka, Bangladesh
+                </p>
+
+                <p>
+                    <i class="bi bi-telephone"></i>
+                    +880 1712-345678
+                </p>
+
+                <p>
+                    <i class="bi bi-envelope"></i>
+                    info@foodhouse.com
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<div class="copyright">
+    <div class="container text-center">
+
+        <p class="mb-0">
+            © 2026 FoodHouse Restaurant.
+            All Rights Reserved.
+        </p>
+
+    </div>
+</div>
+
+
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<script
+    src="https://code.jquery.com/jquery-3.7.1.min.js">
+</script>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
