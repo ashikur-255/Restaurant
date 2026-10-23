@@ -3,7 +3,10 @@ A responsive restaurant website featuring Home, Menu, Dish Details, Reservation,
 
 # FoodHouse - Restaurant Website
 
-![FoodHouse Website Demo](Restaurent_Website.jpg)
+![FoodHouse Website Demo](<img width="2015" height="4935" alt="Restaurent_Website" src="https://github.com/user-attachments/assets/3fcbbe9f-9da3-44d5-a903-96a613048e54" />
+
+
+)
 
 ## Overview
 
