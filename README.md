@@ -1,9 +1,9 @@
 # Restaurant
 A responsive restaurant website featuring Home, Menu, Dish Details, Reservation, About Us, Signup, and Login pages with interactive UI, image zoom, menu filtering, forms, and responsive Bootstrap design.
 
-# FoodHouse - Restaurant Website
+# FoodHouse - Restaurant Website Demo
 
-![FoodHouse Website Demo](<img width="2015" height="4935" alt="Restaurent_Website" src="https://github.com/user-attachments/assets/3fcbbe9f-9da3-44d5-a903-96a613048e54" />
+(<img width="2015" height="4935" alt="Restaurent_Website" src="https://github.com/user-attachments/assets/3fcbbe9f-9da3-44d5-a903-96a613048e54" />
 
 
 )
