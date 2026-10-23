@@ -30,5 +30,4 @@ FoodHouse is a modern and responsive restaurant website template designed to sho
 ## Getting Started
 
 1. Clone the repository:
-   ```bash
-   git clone [https://github.com/your-username/foodhouse-website.git](https://github.com/your-username/foodhouse-website.git)
+  https://github.com/ashikur-255/Restaurant
